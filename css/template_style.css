@@ -37,7 +37,7 @@ hr {
 /* home section */
 
 #home {
-    background: url('../images/Wedding-337.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/bg-main.JPG') 50% 0 repeat-y fixed;
     background-size: 100%;
     color: #00cc00;
     height: 100vh;
@@ -64,6 +64,10 @@ hr {
 }
 
 /* navigation section */
+
+nav {
+    background: grey;
+}
 
  nav div.container {
     text-align: left;
@@ -178,10 +182,25 @@ nav button[type='button'] span.navbar-toggler-icon {
     opacity: 0.9;
 }
 
+/* pricing section */
+
+#pricing {
+    background: url('../images/bg-main.jpg') 50% 0 repeat-y fixed;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+#pricing .inventory_pricing, #pricing .labor_pricing {
+    background: #00cc00;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+}
+
 /* contact section */
 
 #contact {
-    background: #f6f6f6 url('../images/Wedding-337.jpg') 50% 0 repeat-y fixed;
+    background: transparent;
     background-size: 100%;
     color: #00cc00;
     padding-top: 100px;

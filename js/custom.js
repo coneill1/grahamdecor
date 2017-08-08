@@ -31,9 +31,18 @@ function loadGoogleMap() {
 
 };
 
+/*var handleClick = function(event) {
+    event.preventDefault();
+    
+    smoothScroll(document.querySelector('#intro'));
+}*/
 
 /*html document is loaded, DOM ready */
 $(function() {
+    
+    /*var navBtns = document.querySelector("#introLink");
+    navBtns.addEventListener('click', handleClick);*/
+    
 
     $('#preview a').nivoLightbox({
         effect: 'fadedScale',

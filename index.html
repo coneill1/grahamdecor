@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/animate.css">              
         
     </head>
-    <body>
+    <body data-spy='scroll' data-target='.navbar-collapse' data-offset='50'>
         <!-- home section -->
         <section id="home" class="d-flex align-items-center">
             <div class="container">
@@ -18,7 +18,7 @@
                     <div class="col-md-12 col-sm-12 d-flex flex-column align-items-center">
                         <h1 class="wow bounceInDown">Graham Decor</h1>
                         <h2 class="wow bounce">SPECIAL EVENTS</h2>
-                        <a href="" class="btn btn-default">GET STARTED</a>
+                        <a href="#intro" class="btn btn-default smoothScroll">GET STARTED</a>
                     </div>
                 </div>
             </div>
@@ -32,22 +32,22 @@
             </button>
             <div class="container">
 
-                <a href="#" class="navbar-brand">
-                    <div class="col d-flex justify-content-center">
+                <a href="#home" class="navbar-brand smoothScroll">
+                    <!-- <div class="col d-flex justify-content-center">
                         <img class="chair-icon" src="images/chair.svg" alt="logo" height="80">
-                    </div>
+                    </div> -->
                     <div class="col">Graham Decor</div>
                 </a>
 
 
                 <div class="collapse navbar-collapse" id="main-nav-collapse">
                     <ul class="nav navbar-nav nav-tabs">
-                        <a class="nav-item nav-link" href="">HOME</a>
-                        <a class="nav-item nav-link" href="">INTRO</a>
-                        <a class="nav-item nav-link" href="">INVENTORY</a>
-                        <a class="nav-item nav-link" href="">PREVIEW</a>
-                        <a class="nav-item nav-link" href="">PRICING</a>
-                        <a class="nav-item nav-link" href="">CONTACT</a>
+                        <a id ='homeLink' class="nav-item nav-link smoothScroll" href="#home">HOME</a>
+                        <a id='introLink' class="nav-item nav-link smoothScroll" href="#intro">INTRO</a>
+                        <a class="nav-item nav-link smoothScroll" href="#inventory">INVENTORY</a>
+                        <a class="nav-item nav-link smoothScroll" href="#preview">PREVIEW</a>
+                        <a class="nav-item nav-link smoothScroll" href="#pricing">PRICING</a>
+                        <a class="nav-item nav-link smoothScroll" href="#contact">CONTACT</a>
                     </ul>
                 </div> <!-- collapse -->
             </div> <!-- container -->
@@ -82,11 +82,11 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6 bg-black">
                                 <i class="fa fa-bed"></i>
-                                <h3>Tables</h3>
+                                <h3>Tables &amp; Chairs</h3>
                             </div>
                             <div class="col-md-6 col-sm-6 bg-green">
-                                <i class="fa fa-hotel"></i>
-                                <h3>Chairs</h3>
+                                <i class="fa fa-beer"></i>
+                                <h3>Dishes</h3>
                             </div>
                             <div class="col-md-6 col-sm-6 bg-green">
                                 <i class="fa fa-trophy"></i>
@@ -112,37 +112,79 @@
                         <hr />
                         <p>Here are some photos of our stuff being used. </p>
                     </div>
-                    <div class="col-md-12 col-sm-12"></div>
+                    <div class="col-md-12 col-smprev1"></div>
                     <div class="row">
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-295.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/Wedding-295.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev1.jpg" class="img-fluid"/></a>
                         </div>
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-297.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/Wedding-297.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev2.jpg" class="img-fluid"/></a>
                         </div>
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-301.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/Wedding-301.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev3.jpg" class="img-fluid"/></a>
                         </div>
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-316.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img4" src="images/Wedding-316.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev4.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img4" src="images/prev4.jpg" class="img-fluid"/></a>
                         </div>
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-323.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img5" src="images/Wedding-323.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev5.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img5" src="images/prev5.jpg" class="img-fluid"/></a>
                         </div>
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-328.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img6" src="images/Wedding-328.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev6.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img6" src="images/prev6.jpg" class="img-fluid"/></a>
                         </div>
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-324.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/Wedding-324.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev7.jpg" class="img-fluid"/></a>
                         </div>
-                        <div class="col-md-3 col-sm-3 wow fadeIn">
-                            <a href="images/Wedding-337.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/Wedding-337.jpg" class="img-fluid"/></a>
+                        <div class="col-md-3 col-sm-3">
+                            <a href="images/prev8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev8.jpg" class="img-fluid"/></a>
                         </div>
                     </div class="row">
                 </div>
             </div>
         </section>
         <!-- preview section end -->
+				
+				<!-- pricing section -->
+				<section id='pricing'>
+					<div class='container'>
+						<div class='row d-flex flex-column align-items-center'>
+							<div class='col-md-offset-3 col-md-6 col-sm-col-sm-6 title wow fadeInDownBig'>
+								<h2>Pricing</h2>
+								<hr />
+							</div>
+							<div class='row'>
+								<div class='col-md-6 col-sm-6'>
+									<div class='inventory_pricing wow fadeInLeftBig'>
+											<div class='inventory_pricing_title'>
+												<h3>Items</h3>
+											</div>
+											<ul>
+												<li>Decor - $10</li>
+												<li>Tables - $5/table</li>
+												<li>Chairs - $2/chair</li>
+												<li>Tent - $100</li>
+											</ul>
+											<button class='btn btn-warning'>Get Started</button>
+									</div>
+								</div>
+								<div class='col-md-6 col-sm-6'>
+									<div class='labor_pricing wow fadeInRightBig'>
+											<div class='labor_pricing_title'>
+												<h3>Labor</h3>
+											</div>
+											<ul>
+												<li>Self pickup - $20</li>
+												<li>Delivery - $20 + $1/mile</li>
+												<li>Laundry - $20</li>
+											</ul>
+											<button class='btn btn-warning'>Get Started</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end pricing section -->
 
         <!-- contact section -->
         <section id="contact">
@@ -187,7 +229,7 @@
             </div> <!-- container -->
         </footer>
 
-        
+        <script src='node_modules/smoothscroll/smoothscroll.min.js'></script>
         <script src="js/jquery.js"></script>
         <script src="js/tether.min.js"></script>        
         <script src="js/bootstrap.min.js"></script>
