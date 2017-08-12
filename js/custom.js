@@ -37,12 +37,28 @@ function loadGoogleMap() {
     smoothScroll(document.querySelector('#intro'));
 }*/
 
+function showForm(event) {
+    $(event.target).next('div.dropdown-content').show();
+}
+
 /*html document is loaded, DOM ready */
 $(function() {
     
-    /*var navBtns = document.querySelector("#introLink");
-    navBtns.addEventListener('click', handleClick);*/
+//    $('#pricing .fa-times').click(function() {
+//       $('#pricing div.dropdown-content').hide(); 
+//    });
+//    
+//    $('#pricing button').click(function(event) {
+//       showForm(event);
+//    });
     
+    $('#inventory i').click(function(event) {
+        $(event.target).prev('div.hidden').children().first().trigger('click');
+    });
+    
+    $('#inventory div.hidden a').nivoLightbox({
+        effect: 'fadedScale',
+    });
 
     $('#preview a').nivoLightbox({
         effect: 'fadedScale',

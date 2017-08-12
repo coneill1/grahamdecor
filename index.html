@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
         <link rel="stylesheet" href="css/template_style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/nivo-lightbox.css">
@@ -81,20 +81,40 @@
                     <div class="col-md-8 col-sm-8">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 bg-black">
-                                <i class="fa fa-bed"></i>
-                                <h3>Tables &amp; Chairs</h3>
+															<div class="chair-gallery hidden">
+																<a href="images/chair1.jpg" data-lightbox-gallery="chair-gallery"><img src="images/chair1.jpg" /></a>
+																<a href="images/chair2.jpg" data-lightbox-gallery="chair-gallery"><img src="images/chair2.jpg" /></a>
+																<a href="images/chair3.jpg" data-lightbox-gallery="chair-gallery"><img src="images/chair3.jpg" /></a>
+															</div>
+															<i class="fa fa-bed"></i>
+                              <h3>Tables &amp; Chairs</h3>
                             </div>
                             <div class="col-md-6 col-sm-6 bg-green">
-                                <i class="fa fa-beer"></i>
-                                <h3>Dishes</h3>
+															<div class="dishes-gallery hidden">
+																<a href="images/dishes1.jpg" data-lightbox-gallery="dishes-gallery"><img src="images/dishes1.jpg" /></a>
+																<a href="images/dishes2.jpg" data-lightbox-gallery="dishes-gallery"><img src="images/dishes2.jpg" /></a>
+																<a href="images/dishes3.jpg" data-lightbox-gallery="dishes-gallery"><img src="images/dishes3.jpg" /></a>
+															</div>
+                              <i class="fa fa-beer"></i>
+															<h3>Dishes</h3>
                             </div>
                             <div class="col-md-6 col-sm-6 bg-green">
-                                <i class="fa fa-trophy"></i>
-                                <h3>Decor</h3>
+															<div class="decor-gallery hidden">
+																<a href="images/decor1.jpg" data-lightbox-gallery="decor-gallery"><img src="images/decor1.jpg" /></a>
+																<a href="images/decor2.jpg" data-lightbox-gallery="decor-gallery"><img src="images/decor2.jpg" /></a>
+																<a href="images/decor3.jpg" data-lightbox-gallery="decor-gallery"><img src="images/decor3.jpg" /></a>
+															</div>
+                              <i class="fa fa-trophy"></i>
+                              <h3>Decor</h3>
                             </div>
                             <div class="col-md-6 col-sm-6 bg-black">
-                                <i class="fa fa-home"></i>
-                                <h3>Tent</h3>
+															<div class="tent-gallery hidden">
+																<a href="images/tent1.jpg" data-lightbox-gallery="tent-gallery"><img src="images/tent1.jpg" /></a>
+																<a href="images/tent2.jpg" data-lightbox-gallery="tent-gallery"><img src="images/tent2.jpg" /></a>
+																<a href="images/tent3.jpg" data-lightbox-gallery="tent-gallery"><img src="images/tent3.jpg" /></a>
+															</div>
+                              <i class="fa fa-home"></i>
+                              <h3>Tent</h3>
                             </div>
                         </div>
                     </div>
@@ -138,53 +158,70 @@
                         <div class="col-md-3 col-sm-3">
                             <a href="images/prev8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev8.jpg" class="img-fluid"/></a>
                         </div>
-                    </div class="row">
+                    </div>
                 </div>
             </div>
         </section>
         <!-- preview section end -->
 				
-				<!-- pricing section -->
-				<section id='pricing'>
-					<div class='container'>
-						<div class='row d-flex flex-column align-items-center'>
-							<div class='col-md-offset-3 col-md-6 col-sm-col-sm-6 title wow fadeInDownBig'>
-								<h2>Pricing</h2>
-								<hr />
-							</div>
-							<div class='row'>
-								<div class='col-md-6 col-sm-6'>
-									<div class='inventory_pricing wow fadeInLeftBig'>
-											<div class='inventory_pricing_title'>
-												<h3>Items</h3>
-											</div>
-											<ul>
-												<li>Decor - $10</li>
-												<li>Tables - $5/table</li>
-												<li>Chairs - $2/chair</li>
-												<li>Tent - $100</li>
-											</ul>
-											<button class='btn btn-warning'>Get Started</button>
-									</div>
-								</div>
-								<div class='col-md-6 col-sm-6'>
-									<div class='labor_pricing wow fadeInRightBig'>
-											<div class='labor_pricing_title'>
-												<h3>Labor</h3>
-											</div>
-											<ul>
-												<li>Self pickup - $20</li>
-												<li>Delivery - $20 + $1/mile</li>
-												<li>Laundry - $20</li>
-											</ul>
-											<button class='btn btn-warning'>Get Started</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- end pricing section -->
+        <!-- pricing section -->
+        <section id='pricing'>
+            <div class='container'>
+                <div class='row d-flex flex-column align-items-center'>
+                    <div class='col-md-offset-3 col-md-6 col-sm-col-sm-6 title wow fadeInDownBig'>
+                        <h2>Pricing</h2>
+                        <hr />
+                    </div>
+                    <div class='col-md-6 col-sm-6'>
+                        <div class='inventory_pricing bg-faded wow fadeInLeftBig'>
+                            <div class='inventory_pricing_title'>
+                                <h3>Items</h3>
+                            </div>
+                            <ul>
+                                <li>Decor - $10</li>
+                                <li>Tables - $5/table</li>
+                                <li>Chairs - $2/chair</li>
+                                <li>Tent - $100</li>
+                                <li>Labor - $20</li>
+                            </ul>
+                            <div class="dropdown">
+                                <button class="btn btn-secondar dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Get Started
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">   
+                                    <form method="post" action="#">
+                                        <div class="col-md-12 col-sm-12">
+                                            Number of Tables:
+                                            <select id="avail_tables">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            Number of Chairs:
+                                            <select id="avail_chairs">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="25">25</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            <button type="submit" name="submit" class="">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end pricing section -->
 
         <!-- contact section -->
         <section id="contact">
@@ -213,26 +250,42 @@
             <div id="map-canvas"></div>
         </div>
         <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 d-flex flex-column align-items-center">
-                        <h2>Follow Us</h2>
-                         <!-- <div class="navbar navbar-nav social-icon">  -->
-                            <ul class="nav flex-row nav-fill">
-                                <a class="nav-item nav-link" href="">Facebook</a>
-                                <a class="nav-item nav-link" href="">Twitter</a>
-                                <a class="nav-item nav-link" href="">Instagram</a>
-                            </ul>
-                         <!-- </div>  -->
-                    </div> <!-- col-md-12 col-sm-12 --> 
-                </div> <!-- row -->
-            </div> <!-- container -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact us</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="email" class="form-control-label">Your email:</label>
+                        <input type="text" class="form-control" id="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="form-control-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </footer>
 
         <script src='node_modules/smoothscroll/smoothscroll.min.js'></script>
         <script src="js/jquery.js"></script>
         <script src="js/tether.min.js"></script>        
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../../bootstrap-4.0.0-alpha.6-dist/js/bootstrap.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/nivo-lightbox.min.js"></script>
         <script src="js/wow.min.js"></script>                

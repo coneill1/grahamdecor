@@ -151,7 +151,15 @@ nav button[type='button'] span.navbar-toggler-icon {
     color: #42f45f;
 }
 
-/* preview section */
+#inventory .hidden {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/*********************************************** preview section **************************************************/
 
 #preview {
     padding-top: 100px;
@@ -182,7 +190,7 @@ nav button[type='button'] span.navbar-toggler-icon {
     opacity: 0.9;
 }
 
-/* pricing section */
+/******************************** pricing section ***************************************/
 
 #pricing {
     background: url('../images/bg-main.jpg') 50% 0 repeat-y fixed;
@@ -190,14 +198,32 @@ nav button[type='button'] span.navbar-toggler-icon {
     padding-bottom: 120px;
 }
 
-#pricing .inventory_pricing, #pricing .labor_pricing {
-    background: #00cc00;
-    color: #fff;
+#pricing .inventory_pricing {
+    background: transparent;
+    color: #00cc00;
     border-radius: 10px;
     padding: 10px 0 10px 0;
 }
 
-/* contact section */
+#pricing ul {
+    list-style-type: none;
+}
+
+#pricing button {
+    background: #00cc00;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+#pricing button:hover {
+    background: #fff;
+    color: #00cc00;
+    box-shadow: 20px;
+}
+
+/************************ contact section ***************************************/
 
 #contact {
     background: transparent;
@@ -248,19 +274,5 @@ nav button[type='button'] span.navbar-toggler-icon {
 
 #footer {
     background-color: #00cc00;
-    color: #fff;
-}
-
-#footer ul a{
-    text-decoration: none;
-    color: #fff;
-    border: solid;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-#footer ul a:hover {
-    color: #00cc00;
-    background-color: #fff;
-    transition: all 0.4s ease-in-out;
+    color: black;
 }
